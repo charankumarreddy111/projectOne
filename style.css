@@ -1,0 +1,146 @@
+:root {
+  --primary: #0b74de;
+  --accent: #06b6d4;
+  --bg1: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+}
+
+/* BASIC */
+body {
+  background: var(--bg1);
+  color: var(--text);
+  margin: 0;
+  padding: 32px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  gap: 22px;
+}
+
+/* HEADER */
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+}
+
+.header-flex {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+}
+
+.lead {
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.chip {
+  padding: 6px 10px;
+  background: var(--card);
+  border-radius: 900px;
+  box-shadow: 0 4px 12px rgba(2,6,23,0.06);
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  padding: 8px 10px;
+  background: rgba(11,116,222,0.06);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* PROJECTS */
+.project {
+  padding: 12px;
+  border-left: 4px solid var(--primary);
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+}
+
+.project h3 {
+  margin: 0 0 6px 0;
+}
+
+/* COLOR CONTROLS */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.control {
+  background: var(--card);
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button.btn {
+  background: var(--primary);
+  color: white;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
