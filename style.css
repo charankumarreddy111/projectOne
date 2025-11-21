@@ -31,24 +31,37 @@ body {
   box-shadow: 0 10px 30px rgba(2,6,23,0.06);
 }
 
+
+
 .header-flex {
-  display: flex;
-  gap: 18px;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+/* Avatar styling */
 .avatar {
-  width: 92px;
-  height: 92px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 26px;
-  font-weight: bold;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
 }
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text container */
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
 
 h1 {
   margin: 0;
